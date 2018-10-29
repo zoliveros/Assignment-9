@@ -7,29 +7,25 @@
 <body>
 
 		<h1>Press a number from 1-6 to reveal what halloween movie you should watch!</h1>
-		<img id="halloween"></img>
-		<img id="halloween"></img>
-		<img id="halloween"></img>
-		<img id="halloween"></img>
-		<img id="halloween"></img>
-		<img id="halloween"></img>
+		<img id="halloween" onkeypress="myFunction()"></img>
 
 	<div class="movies">
 	<script type="text/javascript">
+		function myFunction() {
 		document.addEventListener("keypress", function(event){
 			console.log(event);
 		var keyButton = event.key;
 		if(keyButton=='1') {
 				document.getElementById('halloween').src="images/addams.jpg";
-			} else  (keyButton == '2'){
+			} else if (keyButton == '2'){
 				document.getElementById('halloween').src="images/finaldestination.jpg";
-			} else (keyButton == '3'){
+			} else if (keyButton == '3'){
 				document.getElementById('halloween').src ="images/nightmare.jpg";
 			}
-			else (keyButton == '4'){
+			else if (keyButton == '4'){
 				document.getElementById('halloween').src ="images/scarymovie.jpg";
 			}
-			else(keyButton == '5'){
+			else if(keyButton == '5'){
 				document.getElementById('halloween').src ="images/thegrudge.jpg";
 			}
 			else (keyButton == '6'){
@@ -39,7 +35,9 @@
 			document.getElementById("keyButton").addEventListener("keypress", function(event) {
 			var div = document.getElementById('movies');
 			for(var i = 1; i < 1; i++);
-		});
+		})
+		};
+
 	</script>
 	</div>
 </body>

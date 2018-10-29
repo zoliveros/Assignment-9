@@ -8,10 +8,16 @@ h1 {
   text-align: center;
 }
 
+#movies{
+  height: 100%;
+  width:50%;
+}
+
 img {
   display: inline-block;
   height: 100%;
   width:50%;
-  float: center;  
+  float: center;
+  z-index: 999;  
 }
 
