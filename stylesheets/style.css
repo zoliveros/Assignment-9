@@ -1,0 +1,17 @@
+body {
+  background-color: black;
+}
+
+h1 {
+  font-family: sans-serif;
+  color: white;
+  text-align: center;
+}
+
+img {
+  display: inline-block;
+  height: 100%;
+  width:50%;
+  float: center;  
+}
+
